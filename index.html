@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: rgb(242, 235, 235);
+    }
+    form {
+      background: #fff;
+      width: 300px;
+      margin: auto;
+      box-shadow: 0 0 5px black;
+      padding: 30px 50px;
+    }
+    h2 {
+      text-align: center;
+      font-variant: small-caps;
+    }
+    .form-field {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+    }
+    .checkbox-saveme {
+      text-align: right;
+      font-style: italic;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #ff8400;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <form action="/test.php">
+    <h2>Добро пожаловать!</h2>
+    <p><input type="login" name="login" id="login" placeholder="Логин" class="form-field"></p>
+    <p><input type="password" name="password" id="password" placeholder="Пароль" class="form-field"></p>
+    <p class="checkbox-saveme">
+      <input type="checkbox" name="save-me" id="save-me">
+      <label for="save-me">Запомнить меня</label>
+    </p>
+    <p><button>Войти</button></p>
+  </form>
+</body>
+</html>
